@@ -64,6 +64,9 @@ session.commit()
 
 bid1 = Bid(amount=200, bidder=user2, item=item1)
 bid2 = Bid(amount=300, bidder=user3, item=item1)
+bid1 = Bid(amount=350, bidder=user2, item=item1)
+bid2 = Bid(amount=500, bidder=user3, item=item1)
+
 session.add_all([bid1, bid2])
 session.commit()
 
